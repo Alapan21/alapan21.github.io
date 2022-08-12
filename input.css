@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom CSS */
+.page_container {
+  background-color: #232323;
+}
+
+@keyframes animationWhite {
+  0% {
+    color: rgba(255, 255, 255, 1);
+  }
+  33.333% {
+    color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.hero_gradient_background--one {
+  background-image: linear-gradient(90deg, #007cf0, #00dfd8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.hero_gradient_foreground--one {
+  animation: animationWhite 8s ease-in infinite;
+  animation-delay: 2s;
+}
+
+.hero_gradient_background--two {
+  background-image: linear-gradient(90deg, #7928ca, #ff0080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero_gradient_foreground--two {
+  animation: animationWhite 8s ease-in infinite;
+  animation-delay: 4s;
+}
+
+.hero_gradient_background--three {
+  background-image: linear-gradient(90deg, #ff4d4d, #f9cb28);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero_gradient_foreground--three {
+  animation: animationWhite 8s ease-in infinite;
+  animation-delay: 6s;
+}
+
+@keyframes animated-gradient-text_fade-foreground-1__efWVr {
+  0%,
+  16.667%,
+  to {
+    opacity: 1;
+  }
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
+}
+
+@keyframes animated-gradient-text_fade-background-1__ptIFS {
+  0%,
+  16.667%,
+  to {
+    opacity: 0;
+  }
+  25%,
+  91.667% {
+    opacity: 1;
+  }
+}
+
+@keyframes animated-gradient-text_fade-foreground-2__sYrlF {
+  0%,
+  to {
+    opacity: 0;
+  }
+  33.333%,
+  50% {
+    opacity: 1;
+  }
+  16.667%,
+  66.667% {
+    opacity: 0;
+  }
+}
+
+@keyframes animated-gradient-text_fade-background-2__e8Hk7 {
+  0%,
+  to {
+    opacity: 1;
+  }
+  33.333%,
+  50% {
+    opacity: 0;
+  }
+  25%,
+  58.333% {
+    opacity: 1;
+  }
+}
+@keyframes animated-gradient-text_fade-foreground-3__Hg4NE {
+  0%,
+  50%,
+  to {
+    opacity: 0;
+  }
+  66.667%,
+  83.333% {
+    opacity: 1;
+  }
+}
+
+@keyframes animated-gradient-text_fade-background-3__NTKrh {
+  0%,
+  58.333%,
+  91.667%,
+  to {
+    opacity: 1;
+  }
+  66.667%,
+  83.333% {
+    opacity: 0;
+  }
+}
