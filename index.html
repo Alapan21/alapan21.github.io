@@ -1,87 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-    <!-- Font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-[#0F0F0F] text-white h-screen w-screen relative">
-    <!-- Navigation -->
-    <nav id="nav" class="z-10 nav">
-      <div class="container">
-        <a href="#" class="logo">
-          <svg
-            class="w-10 h-w-10"
-            width="227"
-            height="250"
-            viewBox="0 0 227 250"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_699_5)">
-              <path
-                d="M226.916 168.077V81.9235C226.915 75.1042 225.12 68.4052 221.711 62.4995C218.301 56.5937 213.397 51.6893 207.492 48.2788L132.872 5.20228C126.968 1.79445 120.271 0.000427246 113.453 0.000427246C106.636 0.000427246 99.9388 1.79445 94.0344 5.20228L19.4234 48.2788C13.5183 51.6893 8.61461 56.5937 5.20516 62.4995C1.7957 68.4052 0.00052973 75.1042 1.76375e-07 81.9235V168.077C-0.000649607 174.895 1.79411 181.593 5.20376 187.498C8.61341 193.402 13.5177 198.305 19.4234 201.712L94.0344 244.835C99.9388 248.242 106.636 250.036 113.453 250.036C120.271 250.036 126.968 248.242 132.872 244.835L207.492 201.712C213.398 198.305 218.302 193.402 221.712 187.498C225.122 181.593 226.916 174.895 226.916 168.077V168.077Z"
-                fill="white"
-              />
-              <path
-                d="M196.079 156.69C196.681 156.879 197.227 157.213 197.668 157.664C198.11 158.115 198.433 158.667 198.609 159.273C198.785 159.879 198.809 160.519 198.678 161.136C198.547 161.753 198.266 162.328 197.859 162.81C192.461 169.265 185.712 174.456 178.088 178.015C170.463 181.575 162.15 183.416 153.736 183.408C152.167 183.408 150.617 183.344 149.084 183.224C139.555 182.451 130.367 179.318 122.35 174.107C114.334 168.897 107.74 161.773 103.164 153.378V153.296L102.246 151.461L88.924 125.872L59.1237 183.408H28.1489L73.4 95.9795L88.6304 66.6196L104.118 96.5117V96.5851C108.05 89.9292 113.282 84.1332 119.502 79.5423C125.721 74.9515 132.802 71.6598 140.321 69.8635C147.84 68.0673 155.643 67.8032 163.267 69.0869C170.89 70.3707 178.177 73.1761 184.693 77.336C185.154 77.6327 185.537 78.0364 185.81 78.5127C186.082 78.9891 186.235 79.5241 186.257 80.0724C186.279 80.6207 186.168 81.1661 185.934 81.6625C185.7 82.1588 185.349 82.5913 184.913 82.9235L167.691 96.108C167.075 96.585 166.352 96.9044 165.585 97.0387C164.817 97.173 164.029 97.1181 163.287 96.8787C159.995 95.7932 156.541 95.2811 153.076 95.3648C147.91 95.4775 142.858 96.8998 138.393 99.4983C133.927 102.097 130.195 105.787 127.545 110.222C124.895 114.657 123.415 119.692 123.242 124.856C123.07 130.019 124.211 135.142 126.56 139.744L126.908 140.405C128.903 144.075 131.629 147.298 134.918 149.873C138.207 152.447 141.99 154.32 146.032 155.374C150.074 156.429 154.289 156.642 158.417 156.002C162.545 155.362 166.498 153.882 170.031 151.653C171.031 151.019 172.156 150.608 173.33 150.45C174.503 150.291 175.697 150.389 176.83 150.736L196.079 156.69Z"
-                fill="#FF0049"
-              />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <!-- Font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="bg-[#0F0F0F] text-white h-screen w-screen relative">
+  <!-- Navigation -->
+  <nav id="nav" class="z-10 md:mt-4 nav">
+    <div class="container">
+      <a href="#home" class="h-full logo">
+        <svg class="w-12 h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.32 272.48">
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="five">
+              <path class="cls-1"
+                d="M247.32,183.19V89.29a42.35,42.35,0,0,0-21.17-36.67L144.82,5.67a42.34,42.34,0,0,0-42.33,0L21.17,52.62A42.35,42.35,0,0,0,0,89.29v93.9a42.32,42.32,0,0,0,21.17,36.66l81.32,47a42.34,42.34,0,0,0,42.33,0l81.33-47A42.32,42.32,0,0,0,247.32,183.19Z" />
+              <path class="cls-2"
+                d="M213.71,170.78a4.17,4.17,0,0,1,1.94,6.67,62.61,62.61,0,0,1-48.09,22.45c-1.71,0-3.4-.07-5.07-.2a62.79,62.79,0,0,1-50.05-32.53l0-.09-1-2L96.92,137.19,64.44,199.9H30.68L80,104.61l16.6-32,16.88,32.58h0l0,.08A62.77,62.77,0,0,1,201.3,84.29a3.72,3.72,0,0,1,.24,6.09l-18.77,14.37a5.22,5.22,0,0,1-4.8.84,33,33,0,0,0-11.13-1.65,33.26,33.26,0,0,0-28.9,48.37l.38.72a33.28,33.28,0,0,0,47,12.26,8.94,8.94,0,0,1,7.41-1Z" />
             </g>
-            <defs>
-              <clipPath id="clip0_699_5">
-                <rect width="226.916" height="250" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        <div id="hamburger-button" class="menu">
-          <div class="bars"></div>
-          <div class="bars"></div>
-          <div class="bars"></div>
+          </g>
+        </svg>
+      </a>
+      <div id="hamburger-button" class="menu">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </div>
+    </div>
+    <ul id="nav-list" class="hidden md:flex nav-list">
+      <li class="nav-list-item active">
+        <a href="#home" class="link">Home</a>
+      </li>
+      <li class="nav-list-item">
+        <a href="#about" class="link">About</a>
+      </li>
+      <li class="nav-list-item">
+        <a href="#" class="link">Portfolio</a>
+      </li>
+      <li class="nav-list-item">
+        <a href="#" class="link">Services</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Home Section -->
+  <section id="home" class="z-50 flex flex-col items-start justify-center w-full h-full px-5 md:items-center home">
+    <div class="flex flex-col items-start text-4xl font-medium leading-snug md:items-center md:text-8xl text-gray-50">
+      Hello! I'm
+      <div class="font-bold md:mb-12 hero-text">Alapan Chakraborty</div>
+    </div>
+    <div class=" gif">
+      <img src="./assets/gifs/head--shake--gif.gif" alt="" />
+    </div>
+    <div class="text-3xl md:absolute bottom-20">
+      Currently working as <span class="italic font-medium text-orange-500">UX Designer</span> @
+      <span class="text-3xl ">Highradius</span>
+    </div>
+  </section>
+  <!-- About section -->
+  <section id="about" class="flex flex-row items-center justify-center w-full px-5 md:h-full md:px-60">
+    <div class="flex flex-col-reverse justify-center md:flex-row md:w-2/3 md:h-2/4 about__container">
+      <div class="about__image">
+      </div>
+      <div class="flex flex-col w-full overflow-x-hidden justify-evenly">
+        <div class="about__hero__text">
+          <div>
+            Designer<span class="text-white">.</span> Coder<span class="text-white">.</span>
+          </div>
+          <div>
+            Illustrator<span class="text-white">.</span> Photographer<span class="text-white">.</span>
+          </div>
+        </div>
+        <div class="text-base font-normal about__description">
+          I'm a self-taught Product Designer based in Hyderabad. What excites me
+          about design is being able to work at the crossroads of art,
+          engineering, business, & psychology and with some of the coolest, most
+          creative minds in the industry. What inspires me about design is being
+          able to craft experiences that strengthens connection and creates a
+          sense of community for others.
+        </div>
+        <div class="text-base font-normal about__description">
+          Apart from exploring new creative tools, I like photography, sketching, reading novels - currently reading
+          Ravan
+          by Amish Tripathi. I enjoy cooking occasionally and I am
+          a big doogo lover!
         </div>
       </div>
-      <ul id="nav-list" class="hidden md:flex nav-list">
-        <li class="nav-list-item active">
-          <a href="#" class="link">Home</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="link">About</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="link">Portfolio</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="link">Services</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- Home Section -->
-    <section
-      class="flex flex-col items-start justify-center w-full h-full px-5 text-6xl font-medium leading-snug md:items-center home md:text-8xl text-gray-50"
-    >
-      Hello! I'm
-      <div class="mb-20 font-bold hero-text">Alapan Chakraborty</div>
-      <div class="gif">
-        <img src="./assets/gifs/head--shake--gif.gif" alt="" />
-      </div>
-    </section>
-    <section
-      class="flex flex-col items-start justify-center w-full h-full px-5 text-6xl font-medium leading-snug md:items-center home md:text-8xl text-gray-50"
-    >
-      Hello! I'm
-      <div class="mb-20 font-bold hero-text">Alapan Chakraborty</div>
-      <div class="gif">
-        <img src="./assets/gifs/head--shake--gif.gif" alt="" />
-      </div>
-    </section>
-    <script src="./index.js"></script>
-  </body>
+    </div>
+  </section>
+  <script src="./index.js"></script>
+</body>
+
 </html>

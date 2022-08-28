@@ -9,7 +9,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Public Sans", sans-serif;
   overflow-x: hidden;
@@ -38,6 +40,15 @@ body {
 }
 /*  */
 
+/*  */
+.cls-1 {
+  fill: transparent;
+}
+.cls-2 {
+  fill: #fff;
+}
+/*  */
+
 @layer components {
   /* add h-screen when active */
   .nav {
@@ -49,7 +60,7 @@ body {
   }
 
   .menu {
-    @apply relative flex flex-col justify-between w-6 h-6 p-1 overflow-hidden lg:hidden;
+    @apply relative flex flex-col justify-between w-6 h-6 p-1 overflow-hidden md:hidden;
   }
 
   .nav-list {
@@ -79,6 +90,12 @@ body {
   .menu .active .bars:nth-child(3) {
     @apply absolute -rotate-45 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2;
   }
+  .about__image {
+    @apply my-10 md:my-0 w-full h-[500px] md:h-full mr-10 bg-white bg-top bg-cover md:bg-center rounded-2xl md:w-1/2 md:hover:drop-shadow-[0_0_0_rgba(123,97,255,1)] md:drop-shadow-[-12px_12px_0_rgba(123,97,255,1)] duration-300;
+  }
+  .about__hero__text {
+    @apply mb-4 text-4xl font-bold leading-10 tracking-tighter text-panther-purple;
+  }
 }
 
 .hero-text {
@@ -106,4 +123,8 @@ body {
   100% {
     background-position: 800%;
   }
+}
+
+.about__image {
+  background-image: url(./assets/images/image\ 28.jpg);
 }

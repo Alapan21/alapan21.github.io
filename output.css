@@ -633,7 +633,7 @@ video {
   padding: 0.25rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .menu {
     display: none;
   }
@@ -720,16 +720,61 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.about__image {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-right: 2.5rem;
+  height: 500px;
+  width: 100%;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-size: cover;
+  background-position: top;
+  transition-duration: 300ms;
+}
+
+@media (min-width: 768px) {
+  .about__image {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 50%;
+    background-position: center;
+    --tw-drop-shadow: drop-shadow(-12px 12px 0 rgba(123,97,255,1));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .about__image:hover {
+    --tw-drop-shadow: drop-shadow(0 0 0 rgba(123,97,255,1));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+}
+
+.about__hero__text {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: -0.05em;
+  --tw-text-opacity: 1;
+  color: rgb(123 97 255 / var(--tw-text-opacity));
+}
+
 .relative {
   position: relative;
+}
+
+.bottom-20 {
+  bottom: 5rem;
 }
 
 .z-10 {
   z-index: 10;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.z-50 {
+  z-index: 50;
 }
 
 .flex {
@@ -752,24 +797,44 @@ video {
   width: 100vw;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-12 {
+  width: 3rem;
 }
 
 .w-full {
   width: 100%;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-start {
   align-items: flex-start;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .bg-\[\#0F0F0F\] {
@@ -787,9 +852,19 @@ video {
   padding-right: 1.25rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-medium {
@@ -798,6 +873,14 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-snug {
@@ -814,12 +897,21 @@ video {
   color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -850,6 +942,18 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   border: 5px solid rgba(0, 0, 0, 0);
+}
+
+/*  */
+
+/*  */
+
+.cls-1 {
+  fill: transparent;
+}
+
+.cls-2 {
+  fill: #fff;
 }
 
 /*  */
@@ -893,13 +997,50 @@ body {
   }
 }
 
+.about__image {
+  background-image: url(./assets/images/image\ 28.jpg);
+}
+
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:h-2\/4 {
+    height: 50%;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 
   .md\:text-8xl {
